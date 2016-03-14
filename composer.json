@@ -1,0 +1,21 @@
+{
+    "name": "slince/rss-collector",
+    "description": "Rss article collector",
+    "authors": [
+        {
+            "name": "tao",
+            "email": "taosikai@yeah.net"
+        }
+    ],
+    "license": "Apache-2.0",
+    "require": {
+        "php": "~5.4",
+        "j0k3r/php-readability": "~1.0",
+        "dg/rss-php": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Slince\\RssCollector\\": ""
+        }
+    }
+}
