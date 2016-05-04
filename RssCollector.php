@@ -66,7 +66,7 @@ class RssCollector
                 if ($result !== false) {
                     list($title, $content) = $result;
                     $link = $item->link;
-                    $this->triggerArticleHander($title, $content, $link, (array)$item);
+                    $this->triggerHander($title, $content, $link, (array)$item);
                     $articles[] = (object)[
                         'title' => $title,
                         'content' => $content,
@@ -86,7 +86,7 @@ class RssCollector
      * @param string $link
      * @param array $item
      */
-    protected function triggerArticleHander(&$title, &$content, &$link, $item)
+    protected function triggerHander(&$title, &$content, &$link, $item)
     {
         foreach ($this->handlers as $handler) {
             call_user_func($handler, $title, $content, $link, $item);
@@ -131,6 +131,16 @@ class RssCollector
         foreach ($handlers as $handler) {
             $this->pushHandler($handler);
         }
+    }
+
+    /**
+     * 获取所有的handlers
+     *
+     * @return array
+     */
+    function getHandlers()
+    {
+        return $this->handlers;
     }
     
     /**
