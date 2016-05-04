@@ -1,4 +1,11 @@
 ﻿### 基于Rss的文章采集器
+
+[![Build Status](https://travis-ci.org/slince/rss-collector.svg?branch=master)](https://travis-ci.org/slince/rss-collector)
+[![Latest Stable Version](https://poser.pugx.org/slince/rss-collector/v/stable)](https://packagist.org/packages/slince/rss-collector)
+[![Total Downloads](https://poser.pugx.org/slince/rss-collector/downloads)](https://packagist.org/packages/slince/rss-collector)
+[![Latest Unstable Version](https://poser.pugx.org/slince/rss-collector/v/unstable)](https://packagist.org/packages/slince/rss-collector)
+[![License](https://poser.pugx.org/slince/rss-collector/license)](https://packagist.org/packages/slince/rss-collector)
+
 采集器集成了文章正文抽取算法，会自动将文章页面其它页面元素排除；保证文章内容的干净。
 
 ## 安装
